@@ -122,9 +122,9 @@ form h2, p, span {
 }
 .divider::before,
 .divider::after {
-  content: ""; /* обязательно! иначе элемент не появится */
-  flex: 1; /* растягиваем линию */
-  border-bottom: 1px solid gray; /* сама линия */
+  content: ""; 
+  flex: 1; 
+  border-bottom: 1px solid gray; 
 }
 .divider::before { margin-right: 10px; }
 .divider::after { margin-left: 10px; }
