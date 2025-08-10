@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body {
+    background-color: #191A1C;
+    color: white;
+}
+
+.login__page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 120px;
+}
+
+.login__page .login__left {
+    width: 50%;
+}
+
+.login__page .login__right {
+    width: 50%;
+}
+
+.login__page .login__left img {
+    width: 100%;
+    object-fit: cover;
+    height: calc(100vh - 60px);
+}
+
+.login__right__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__right__logo img {
+    width: 170px;
+    margin-bottom: 80px;
+}
+
+#gmail__btn {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: var(--Main-Dark_200, #2D2E30);
+    gap: 20px;
+    cursor: pointer;
+}
+
+#register__btn {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: var(--Main-Dark_200, #5367FE);
+    gap: 20px;
+    cursor: pointer;
+}
+
+#login__link {
+    color: #5367FE;
+}
+
+form {
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: transparent;
+    color: white;
+    margin: 0; 
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; 
+}
+
+form h2, p, span {
+    line-height: 40px;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .login__page {
+        flex-direction: column;
+        padding: 20px;
+        gap: 0;
+    }
+
+    .login__left {
+        display: none; 
+    }
+
+    .login__right {
+        width: 100%;
+    }
+
+    form {
+        padding: 0 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    form h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #gmail__btn, 
+    #register__btn, 
+    input {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
